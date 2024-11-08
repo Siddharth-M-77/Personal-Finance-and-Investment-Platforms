@@ -1,48 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-            rel="stylesheet">
-    </head>
-    <body class="bg-gray-900 text-gray-200">
-        <!-- Navbar -->
-        <nav class="bg-gray-800 p-4 hidden md:block">
-            <div class="container mx-auto flex justify-between items-center">
-                <a href="index.html"
-                    class="text-indigo-400 font-bold text-xl">Finance
-                    Platform</a>
-                <ul class="flex space-x-4">
-                    <li><a href="index.html"
-                            class="text-gray-200 hover:text-indigo-400">Home</a></li>
-                    <li><a href="dashboard.html"
-                            class="text-gray-200 hover:text-indigo-400">Dashboard</a></li>
-                    <li><a href="budgeting.html"
-                            class="text-gray-200 hover:text-indigo-400">Budgeting</a></li>
-                    <li><a href="investments.html"
-                            class="text-gray-200 hover:text-indigo-400">Investments</a></li>
-                    <li><a href="planning.html"
-                            class="text-gray-200 hover:text-indigo-400">Financial
-                            Planning</a></li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Platform - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-gray-200">
 
-                </ul>
-                
-            </div>
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-indigo-400 font-bold text-xl">Finance Platform</a>
+      <ul class="flex space-x-4">
+        <li><a href="index.html" class="text-gray-200 hover:text-indigo-400">Home</a></li>
+        <li><a href="dashboard.html" class="text-gray-200 hover:text-indigo-400">Dashboard</a></li>
+        <li><a href="budgeting.html" class="text-gray-200 hover:text-indigo-400">Budgeting</a></li>
+        <li><a href="investments.html" class="text-gray-200 hover:text-indigo-400">Investments</a></li>
+        <li><a href="planning.html" class="text-gray-200 hover:text-indigo-400">Financial Planning</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <!-- Hero Section -->
+  <section class="bg-gray-900 pt-20 pb-16 text-center">
+    <div class="container mx-auto">
+      <h1 class="text-5xl font-extrabold text-indigo-500 mb-6">Welcome to Your Finance Platform</h1>
+      <p class="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
+        Manage your personal finances, track budgets, investments, and plan your financial future with ease. Start your journey to financial freedom today!
+      </p>
+      <div>
+        <a href="dashboard.html" class="bg-indigo-500 text-gray-200 px-8 py-3 rounded-full font-semibold hover:bg-indigo-400 transition duration-300">Get Started</a>
+        <a href="planning.html" class="ml-4 border-2 border-indigo-500 text-indigo-500 px-8 py-3 rounded-full font-semibold hover:bg-indigo-500 hover:text-gray-200 transition duration-300">Learn More</a>
+      </div>
+    </div>
+  </section>
 
-        </nav>
+  <!-- Features Section -->
+  <section class="py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold text-indigo-500 mb-10">Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
-
-        <!-- Home Content -->
-        <div
-            class="container mx-auto mt-52 p-6 text-center">
-            <h1 class="text-5xl font-extrabold text-indigo-500 mb-10">Welcome to
-                Your Financial Platform</h1>
-            <p class="text-xl">Manage your personal finances with ease. Track
-                budgets, investments, and financial goals, all in one place.</p>
+        <!-- Feature 1 -->
+        <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition transform hover:-translate-y-3">
+          <h3 class="text-2xl font-semibold text-indigo-400 mb-3">Budget Tracking</h3>
+          <p class="text-gray-300">Easily track your income and expenses to keep your finances in check.</p>
         </div>
-    </body>
+        
+        <!-- Feature 2 -->
+        <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition transform hover:-translate-y-3">
+          <h3 class="text-2xl font-semibold text-indigo-400 mb-3">Investment Management</h3>
+          <p class="text-gray-300">Monitor and manage your investments to achieve your financial goals.</p>
+        </div>
+        
+        <!-- Feature 3 -->
+        <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition transform hover:-translate-y-3">
+          <h3 class="text-2xl font-semibold text-indigo-400 mb-3">Financial Planning</h3>
+          <p class="text-gray-300">Plan for the future with our comprehensive financial planning tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="bg-gray-800 py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold text-indigo-500 mb-10">What Our Users Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Testimonial 1 -->
+        <div class="bg-gray-900 p-8 rounded-lg shadow-lg">
+          <p class="text-gray-300 italic">"This platform has transformed the way I manage my finances. The budgeting tools are invaluable!"</p>
+          <h4 class="text-indigo-400 font-semibold mt-4">- John Doe</h4>
+        </div>
+        
+        <!-- Testimonial 2 -->
+        <div class="bg-gray-900 p-8 rounded-lg shadow-lg">
+          <p class="text-gray-300 italic">"Investing has never been easier. I now feel confident about my financial future!"</p>
+          <h4 class="text-indigo-400 font-semibold mt-4">- Jane Smith</h4>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="bg-indigo-600 py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold text-gray-200 mb-6">Ready to Take Control of Your Finances?</h2>
+      <p class="text-lg text-gray-300 mb-10">Sign up today and start your journey to financial stability and growth.</p>
+      <a href="signup.html" class="bg-gray-900 text-gray-200 px-10 py-4 rounded-full font-semibold hover:bg-gray-800 transition duration-300">Sign Up Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-6">
+    <div class="container mx-auto text-center">
+      <p class="text-gray-500">&copy; 2024 Finance Platform. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
 </html>
