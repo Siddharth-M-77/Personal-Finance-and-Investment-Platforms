@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Finance Platform - Home</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-gray-900 text-gray-200">
 
   <!-- Navbar -->
-  <nav class="bg-gray-800 p-4">
+  <nav class="bg-gray-800 p-4" data-aos="fade-down" data-aos-duration="800">
     <div class="container mx-auto flex justify-between items-center">
       <a href="index.html" class="text-indigo-400 font-bold text-xl">Finance Platform</a>
       <ul class="flex space-x-4">
@@ -23,7 +25,7 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="bg-gray-900 pt-20 pb-16 text-center">
+  <section class="bg-gray-900 pt-20 pb-16 text-center" data-aos="fade-up" data-aos-duration="1000">
     <div class="container mx-auto">
       <h1 class="text-5xl font-extrabold text-indigo-500 mb-6">Welcome to Your Finance Platform</h1>
       <p class="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
@@ -37,25 +39,25 @@
   </section>
 
   <!-- Features Section -->
-  <section class="py-16">
+  <section class="py-16" data-aos="fade-up" data-aos-duration="1200">
     <div class="container mx-auto text-center">
       <h2 class="text-4xl font-bold text-indigo-500 mb-10">Features</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
         <!-- Feature 1 -->
-        <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition transform hover:-translate-y-3">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition transform hover:-translate-y-3" data-aos="zoom-in" data-aos-delay="200">
           <h3 class="text-2xl font-semibold text-indigo-400 mb-3">Budget Tracking</h3>
           <p class="text-gray-300">Easily track your income and expenses to keep your finances in check.</p>
         </div>
         
         <!-- Feature 2 -->
-        <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition transform hover:-translate-y-3">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition transform hover:-translate-y-3" data-aos="zoom-in" data-aos-delay="300">
           <h3 class="text-2xl font-semibold text-indigo-400 mb-3">Investment Management</h3>
           <p class="text-gray-300">Monitor and manage your investments to achieve your financial goals.</p>
         </div>
         
         <!-- Feature 3 -->
-        <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition transform hover:-translate-y-3">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition transform hover:-translate-y-3" data-aos="zoom-in" data-aos-delay="400">
           <h3 class="text-2xl font-semibold text-indigo-400 mb-3">Financial Planning</h3>
           <p class="text-gray-300">Plan for the future with our comprehensive financial planning tools.</p>
         </div>
@@ -64,19 +66,19 @@
   </section>
 
   <!-- Testimonials Section -->
-  <section class="bg-gray-800 py-16">
+  <section class="bg-gray-800 py-16" data-aos="fade-up" data-aos-duration="1500">
     <div class="container mx-auto text-center">
       <h2 class="text-4xl font-bold text-indigo-500 mb-10">What Our Users Say</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
         <!-- Testimonial 1 -->
-        <div class="bg-gray-900 p-8 rounded-lg shadow-lg">
+        <div class="bg-gray-900 p-8 rounded-lg shadow-lg" data-aos="fade-left" data-aos-delay="500">
           <p class="text-gray-300 italic">"This platform has transformed the way I manage my finances. The budgeting tools are invaluable!"</p>
           <h4 class="text-indigo-400 font-semibold mt-4">- John Doe</h4>
         </div>
         
         <!-- Testimonial 2 -->
-        <div class="bg-gray-900 p-8 rounded-lg shadow-lg">
+        <div class="bg-gray-900 p-8 rounded-lg shadow-lg" data-aos="fade-right" data-aos-delay="600">
           <p class="text-gray-300 italic">"Investing has never been easier. I now feel confident about my financial future!"</p>
           <h4 class="text-indigo-400 font-semibold mt-4">- Jane Smith</h4>
         </div>
@@ -86,7 +88,7 @@
   </section>
 
   <!-- Call to Action Section -->
-  <section class="bg-indigo-600 py-16">
+  <section class="bg-indigo-600 py-16" data-aos="fade-up" data-aos-duration="2000">
     <div class="container mx-auto text-center">
       <h2 class="text-4xl font-bold text-gray-200 mb-6">Ready to Take Control of Your Finances?</h2>
       <p class="text-lg text-gray-300 mb-10">Sign up today and start your journey to financial stability and growth.</p>
@@ -101,5 +103,11 @@
     </div>
   </footer>
 
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init();
+  </script>
 </body>
 </html>
